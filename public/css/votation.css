@@ -1,0 +1,118 @@
+/* ----BOX CONTENT----*/
+main {
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 85vw;
+    max-width: 512px;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.box-content {
+    width: 90%;
+    padding: 1rem 0 1rem 0;
+}
+
+.box-header {
+    margin-bottom: 1rem;
+}
+
+table {
+    border-spacing: .8rem;
+}
+
+.radio-inputs {
+    cursor: pointer;
+}
+
+.alternatives {
+    width: 100%;
+}
+
+.votes-number {
+    text-align: center;
+}
+
+.box-footer {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-footer input {
+    padding: .5rem .7rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #55DD55;
+    color: #fff;
+    cursor: pointer;
+}
+
+.box-footer #input-closed {
+    background-color: #551111;
+    cursor:default;
+}
+
+.box-footer #input-future {
+    background-color: #111155; 
+    cursor:default;
+}
+
+.button-back {
+    display: flex;
+    align-items: center;
+}
+
+.button-back a {
+    text-decoration: none;
+    color: #fff;
+    height: 2rem;
+    width: 2rem;
+}
+
+.button-back img {
+    height: 2rem;
+}
+
+@media (min-width: 750px) and (max-width: 1200px) {
+    .box {
+        max-width: 550px;
+    }
+
+    .box-content {
+        margin: 2rem 0 2rem 0;
+    }
+
+    .box-footer {
+        margin-top: 2.5rem;
+    }
+}
+
+@media (min-width: 1201px) {
+    .box {
+        max-width: 700px;
+    }
+
+    .box-content {
+        margin: 2rem 1rem 2rem 1rem;
+    }
+
+    .box-footer {
+        margin-top: 3.5rem;
+    }
+
+    .alternatives {
+        width: 100%;
+    }
+}

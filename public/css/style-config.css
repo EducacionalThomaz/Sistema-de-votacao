@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #F0F0F0;
+}
+
+/* ----HEADER---- */
+
+header,
+.header-items,
+.logo,
+.links,
+.links-list {
+    display: flex;
+}
+
+header {
+    height: 13vh;
+    width: 100vw;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-image: linear-gradient(to bottom right, #972AAD, #E686F9) ;
+
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-items {
+    height: 10vh;
+    width: 90vw;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo {
+    align-items: center;
+}
+
+.links {
+    display: none;
+}
+
+
+
+@media (min-width: 750px) and (max-width: 1200px) {
+    .logo,
+    .links {
+        align-items: center;
+    }
+    
+    .links {
+        display: flex;
+    }
+
+    .logo h1 {
+        text-decoration: none;
+        margin-left: 2rem;     
+    }
+    
+    .links-list {
+        width: 30vw;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .links-list li { 
+        list-style: none;
+        padding: .8rem;
+        cursor: pointer;
+    }
+
+    .links-list #active,
+    .links-list li:hover { 
+        border-radius: 10px;
+        background-color: #BD34D9;
+        transition: .3s;
+    }
+
+    .header-items {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1201px) {
+    .logo,
+    .links {
+        align-items: center;
+    }
+
+    .links {
+        display: flex;
+    }
+
+    .logo h1 {
+        text-decoration: none;
+        margin-left: 2rem;     
+    }
+
+    .links-list {
+        width: 18vw;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .links-list li { 
+        list-style: none;
+        padding: .8rem;
+        cursor: pointer;
+    }
+
+    .links-list #active,
+    .links-list li:hover { 
+        border-radius: 10px;
+        background-color: #BD34D9;
+        transition: .3s;
+    }
+
+    .header-items {
+        justify-content: space-between;
+    }
+}
